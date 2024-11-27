@@ -26,20 +26,19 @@ public class UIINTERACTIONS : Stats
         if (GUI.Button(new Rect(250, 600, 250, 50), "Mage"))
         {
             PlayerStats = mage;
-            PlayerLabel = $"Mage Stats \n\r Health : {Health} \n\r Attack : {Attack} \n\r Defense : {Defense}";
+            PlayerLabel = "Player: " + "\nHealth: " + mage.Health + "\nAttack: " + mage.Attack + "\nDefense: " + mage.Defense;
         }
 
         if (GUI.Button(new Rect(600, 600, 250, 50), "Archer"))
         {
-            
-
-
+            PlayerStats = archer;
+            PlayerLabel = "Player: " + "\nHealth: " + archer.Health + "\nAttack: " + archer.Attack + "\nDefense: " + archer.Defense;
         }
 
         if (GUI.Button(new Rect(950, 600, 250, 50), "Swordsman"))
         {
             PlayerStats = swordsman;
-            PlayerLabel = "Player: " + "\nHealth: " + swordsman.Health + "\nAttack: " + swordsman.Attack + "\nDefences: " + swordsman.Defense;
+            PlayerLabel = "Player: " + "\nHealth: " + swordsman.Health + "\nAttack: " + swordsman.Attack + "\nDefense: " + swordsman.Defense;
         }
         if (GUI.Button(new Rect(600, 475, 250, 100), "ATTACK"))
         {
@@ -51,11 +50,11 @@ public class UIINTERACTIONS : Stats
         }
         if (GUI.Button(new Rect(600, 350, 245, 50), "Demon King"))
         {
-
+            DemonKingLabel = "Demon King : " + "\nHealth: " + demonking.NPCHealth + "\nAttack: " + demonking.NPCAttack + "\nDefense: " + demonking.NPCDefense;
         }
         if (GUI.Button(new Rect(900, 525, 250, 50), "Companion Knight"))
         {
-
+            CompanionLabel = "Companion Knight: " + "\nHealth: " + companionknight.NPCHealth + "\nAttack: " + companionknight.NPCAttack + "\nDefense: " + companionknight.NPCDefense;
         }
 
 
