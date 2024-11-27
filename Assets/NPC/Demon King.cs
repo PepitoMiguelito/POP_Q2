@@ -5,6 +5,5 @@ using UnityEngine;
 public class DemonKing : NPCStats
 {
 
-    [SerializeField] public DemonKing demon;
 
 }
